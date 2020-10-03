@@ -720,7 +720,7 @@ calculate_vars() {
     eval $invocation
     valid_legacy_download_link=true
 
-    normalized_architecture="$(get_normalized_architecture_from_architecture "$architecture")"
+    normalized_architecture="x64"
     say_verbose "normalized_architecture=$normalized_architecture"
 
     specific_version="$(get_specific_version_from_version "$azure_feed" "$channel" "$normalized_architecture" "$version")"

@@ -49,7 +49,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=${DOTNET_CLI_TELEMETRY_OPTOUT:-1}
 export ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT:-production}
 
 # dotnet installation
-$BP_DIR/bin/util/dotnet-install.sh --channel $framework_version --version $runtime_framework_version --install-dir $BUILD_DIR/.dotnet
+$BP_DIR/bin/util/dotnet-install.sh --channel Current --version $runtime_framework_version --install-dir $BUILD_DIR/.dotnet
 
 # Add symbolic link for dotnet
 if [[ $BUILD_DIR != '/app' ]]; then
