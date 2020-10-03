@@ -29,7 +29,7 @@ print "Stack version: ${STACK}"
 
 print ".Net Core 3.1 on Ubuntu"
 wget "https://packages.microsoft.com/config/ubuntu/$herokuos_version/packages-microsoft-prod.deb" -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 apt_install apt-transport-https dotnet-sdk-3.1
 
 # Skip TELEMETRY_OPTOUT on production environment
