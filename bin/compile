@@ -86,5 +86,5 @@ install_jdk "${BUILD_DIR}" "${CACHE_DIR}"
 [ -n "$(find ${BUILD_DIR} -type f -name "*.kt")" ] && mcount "kotlin.source"
 [ -n "$(find ${BUILD_DIR} -type f -name "*.groovy")" ] && mcount "groovy.source"
 
-run_mvn "install" $BUILD_DIR $CACHE_DIR
+run_mvn "compile" $BUILD_DIR $CACHE_DIR
 remove_mvn $BUILD_DIR $CACHE_DIR
