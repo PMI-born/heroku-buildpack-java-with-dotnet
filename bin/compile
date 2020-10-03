@@ -37,7 +37,7 @@ else
 fi
 
 # Get .net core framework version
-framework_version="$(get_framework_version $BUILD_DIR)"
+framework_version="netstandard2.1"
 print "The .net core framework version: ${framework_version}"
 
 runtime_framework_version="$(get_runtime_framework_version $BUILD_DIR)"
