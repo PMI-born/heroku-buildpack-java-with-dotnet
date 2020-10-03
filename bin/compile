@@ -37,10 +37,10 @@ else
 fi
 
 # Get .net core framework version
-framework_version="netstandard2.1"
+framework_version="dotnet"
 print "The .net core framework version: ${framework_version}"
 
-runtime_framework_version="$(get_runtime_framework_version $BUILD_DIR)"
+runtime_framework_version="Latest"
 print "The dotnet sdk version: ${runtime_framework_version} to be installed"
 
 # Skip TELEMETRY_OPTOUT on production environment
